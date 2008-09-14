@@ -1,11 +1,14 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Graphics-ColorNames-WWW
-version:      0.01
-version_from: WWW.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                Graphics-ColorNames-WWW
+version:             1.00
+abstract:            WWW color names and equivalent RGB values
+license:             ~
+author:              
+    - Claus Färber <CFAERBER@cpan.org>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
     Graphics::ColorNames:          0.32
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

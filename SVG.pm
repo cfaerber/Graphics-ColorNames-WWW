@@ -28,11 +28,11 @@ C<Graphics::ColorNames>,  SVG 1.2 Specificiation <http://www.w3.org/SVG/>
 
 =head1 AUTHOR
 
-Claus Färber <cfaerber@cpan.org>
+Claus Färber <CFAERBER@cpan.org>
 
 =head1 LICENSE
 
-Copyright © 2005 Claus Färber
+Copyright © 2005-2008 Claus Färber
 
 Based on C<Graphics::ColorNames::HTML> Copyright © 2001-2004 Robert Rothenberg.
 

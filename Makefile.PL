@@ -9,5 +9,5 @@ WriteMakefile(
 	},
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM => 'WWW.pm', # retrieve abstract from module
-       AUTHOR     => 'Claus Färber <perl@faerber.muc.de>') : ()),
+       AUTHOR     => 'Claus FÃ¤rber <CFAERBER@cpan.org>') : ()),
 );

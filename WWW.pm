@@ -34,11 +34,11 @@ C<Graphics::ColorNames>
 
 =head1 AUTHOR
 
-Claus Färber <cfaerber@cpan.org>
+Claus Färber <CFAERBER@cpan.org>
 
 =head1 LICENSE
 
-Copyright © 2005 Claus Färber
+Copyright © 2005-2008 Claus Färber
 
 Based on C<Graphics::ColorNames::HTML> Copyright © 2001-2004 Robert Rothenberg.
 
@@ -52,7 +52,7 @@ require 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '1.00';
 
 sub NamesRgbTable() {
   my %map = ();
