@@ -1,0 +1,13 @@
+Makefile.PL
+MANIFEST
+META.yml
+WWW.pm
+IE.pm
+SVG.pm
+t/00_WWW.t
+t/10_SVG.t
+t/11_IE.t
+t/20_WWW_HTML.t
+t/20_WWW_IE.t
+t/20_WWW_Mozilla.t
+t/20_WWW_SVG.t
