@@ -1,52 +1,13 @@
+# $Id$
+#
 package Graphics::ColorNames::SVG;
-
-=head1 NAME
-
-Graphics::ColorNames::SVG - SVG color names and equivalent RGB values
-
-=head1 SYNOPSIS
-
-  require Graphics::ColorNames::SVG;
-
-  $NameTable = Graphics::ColorNames::SVG->NamesRgbTable();
-  $RgbBlack  = $NameTable->{black};
-
-=head1 DESCRIPTION
-
-This module defines color names and their associated RGB values from the
-SVG 1.2 Specification.
-
-=head2 Note
-
-Reportedly "fuchsia" was misspelled "fuscia" in an unidentified SVG
-specification. It also appears to be a common misspelling, so both names are
-recognized.
-
-=head1 SEE ALSO
-
-C<Graphics::ColorNames>,  SVG 1.2 Specificiation <http://www.w3.org/SVG/>
-
-=head1 AUTHOR
-
-Claus Färber <CFAERBER@cpan.org>
-
-=head1 LICENSE
-
-Copyright © 2005-2008 Claus Färber
-
-Based on C<Graphics::ColorNames::HTML> Copyright © 2001-2004 Robert Rothenberg.
-
-All rights reserved.  This program is free software; you can redistribute it
-and/or modify it under the same terms as Perl itself.
-
-=cut
 
 require 5.006;
 
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.10';
 
 sub NamesRgbTable() {
   sub rgb { ($_[0] << 16) + ($_[1] << 8) + ($_[2]) }
@@ -205,4 +166,51 @@ sub NamesRgbTable() {
 
 1;
 
-__END__
+=encoding utf8
+
+=head1 NAME
+
+Graphics::ColorNames::SVG - SVG color names and equivalent RGB values
+
+=head1 SYNOPSIS
+
+  require Graphics::ColorNames::SVG;
+
+  $NameTable = Graphics::ColorNames::SVG->NamesRgbTable();
+  $RgbBlack  = $NameTable->{black};
+
+=head1 DESCRIPTION
+
+This module defines color names and their associated RGB values from 
+various WWW specifications, such as SVG or CSS.
+
+
+=head2 Note
+
+Reportedly "fuchsia" was misspelled "fuscia" in an unidentified HTML
+specification. It also appears to be a common misspelling, so both names are
+recognized.
+
+=head1 SEE ALSO
+
+C<Graphics::ColorNames>,
+SVG 1.2 Specificiation <http://www.w3.org/SVG/>,
+CSS Color Module Level 3 <http://www.w3.org/TR/css3-color>.
+
+=head1 AUTHOR
+
+Claus Färber <CFAERBER@cpan.org>
+
+Based on C<Graphics::ColorNames::HTML> by Robert Rothenberg.
+
+=head1 LICENSE
+
+Copyright © 2005-2008 Claus Färber.
+
+Copyright © 2001-2004 Robert Rothenberg.
+
+All rights reserved.  This program is free software; you can
+redistribute it and/or modify it under the same terms as Perl
+itself.
+
+=cut

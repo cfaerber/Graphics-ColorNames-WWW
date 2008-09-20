@@ -1,51 +1,13 @@
+# $Id$
+#
 package Graphics::ColorNames::IE;
-
-=head1 NAME
-
-Graphics::ColorNames::IE - MS Internet Explorer color names and equivalent RGB values
-
-=head1 SYNOPSIS
-
-  require Graphics::ColorNames::IE;
-
-  $NameTable = Graphics::ColorNames::IE->NamesRgbTable();
-  $RgbBlack  = $NameTable->{black};
-
-=head1 DESCRIPTION
-
-This module defines color names and their associated RGB values recognized by
-Microsoft Internet Explorer.
-
-=head2 Note
-
-Although Microsoft calls them "X11 color names", some of them are not identical
-to the definitions in the X Specification.
-
-=head1 SEE ALSO
-
-C<Graphics::ColorNames>, MSDN <http://msdn.microsoft.com/library/en-us/dnwebgen/html/X11_names.asp>
-
-=head1 AUTHOR
-
-Claus Färber <CFAERBER@cpan.org>
-
-=head1 LICENSE
-
-Copyright © 2005-2008 Claus Färber
-
-Based on C<Graphics::ColorNames::HTML> Copyright © 2001-2004 Robert Rothenberg.
-
-All rights reserved.  This program is free software; you can redistribute it
-and/or modify it under the same terms as Perl itself.
-
-=cut
 
 require 5.006;
 
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.10';
 
 sub NamesRgbTable() {
   use integer;
@@ -195,4 +157,46 @@ sub NamesRgbTable() {
 
 1;
 
-__END__
+=encoding utf8
+
+=head1 NAME
+
+Graphics::ColorNames::IE - MS Internet Explorer color names and equivalent RGB values
+
+=head1 SYNOPSIS
+
+  require Graphics::ColorNames::IE;
+
+  $NameTable = Graphics::ColorNames::IE->NamesRgbTable();
+  $RgbBlack  = $NameTable->{black};
+
+=head1 DESCRIPTION
+
+This module defines color names and their associated RGB values recognized by
+Microsoft Internet Explorer.
+
+=head2 NOTE
+
+Although Microsoft calls them "X11 color names", some of them are not identical
+to the definitions in the X Specification.
+
+=head1 SEE ALSO
+
+C<Graphics::ColorNames>, MSDN <http://msdn.microsoft.com/library/en-us/dnwebgen/html/X11_names.asp>
+
+=head1 AUTHOR
+
+Claus Färber <CFAERBER@cpan.org>
+
+Based on C<Graphics::ColorNames::HTML> by Robert Rothenberg.
+
+=head1 LICENSE
+
+Copyright © 2005-2008 Claus Färber.
+
+Copyright © 2001-2004 Robert Rothenberg.
+
+All rights reserved.  This program is free software; you can redistribute it
+and/or modify it under the same terms as Perl itself.
+
+=cut
