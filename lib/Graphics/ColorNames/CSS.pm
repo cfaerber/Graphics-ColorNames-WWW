@@ -1,5 +1,3 @@
-# $Id$
-#
 package Graphics::ColorNames::CSS;
 
 require 5.006;
@@ -33,7 +31,8 @@ Graphics::ColorNames::CSS - CSS color names and equivalent RGB values
 This module defines color names and their associated RGB values
 from the CSS Color Module Level 3 Working Draft (2008-07-21).
 
-It is actually an alias for L<Graphic::ColorNames::WWW>.
+It is actually an alias for L<Graphic::ColorNames::WWW>. This may
+change in the future should the specs happen to diverge.
 
 =head1 AUTHOR
 
@@ -41,10 +40,9 @@ Claus Färber <CFAERBER@cpan.org>
 
 =head1 LICENSE
 
-Copyright © 2005-2008 Claus Färber.
+Copyright © 2005-2009 Claus Färber.  All rights reserved.  
 
-All rights reserved.  This program is free software; you can
-redistribute it and/or modify it under the same terms as Perl
-itself.
+This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
 
 =cut

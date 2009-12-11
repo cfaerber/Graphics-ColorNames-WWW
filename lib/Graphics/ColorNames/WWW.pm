@@ -1,6 +1,4 @@
-# $Id$
-#
-package Graphics::ColorNames::SVG;
+package Graphics::ColorNames::WWW;
 
 require 5.006;
 
@@ -170,13 +168,13 @@ sub NamesRgbTable() {
 
 =head1 NAME
 
-Graphics::ColorNames::SVG - SVG color names and equivalent RGB values
+Graphics::ColorNames::WWW - WWW color names and equivalent RGB values
 
 =head1 SYNOPSIS
 
-  require Graphics::ColorNames::SVG;
+  require Graphics::ColorNames::WWW;
 
-  $NameTable = Graphics::ColorNames::SVG->NamesRgbTable();
+  $NameTable = Graphics::ColorNames::WWW->NamesRgbTable();
   $RgbBlack  = $NameTable->{black};
 
 =head1 DESCRIPTION
@@ -185,7 +183,7 @@ This module defines color names and their associated RGB values from
 various WWW specifications, such as SVG or CSS.
 
 
-=head2 Note
+=head2 NOTE
 
 Reportedly "fuchsia" was misspelled "fuscia" in an unidentified HTML
 specification. It also appears to be a common misspelling, so both names are
@@ -205,7 +203,7 @@ Based on C<Graphics::ColorNames::HTML> by Robert Rothenberg.
 
 =head1 LICENSE
 
-Copyright © 2005-2008 Claus Färber.
+Copyright © 2005-2009 Claus Färber.
 
 Copyright © 2001-2004 Robert Rothenberg.
 

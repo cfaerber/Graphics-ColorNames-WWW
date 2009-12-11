@@ -1,5 +1,3 @@
-# $Id$
-#
 package Graphics::ColorNames::IE;
 
 require 5.006;
@@ -192,7 +190,7 @@ Based on C<Graphics::ColorNames::HTML> by Robert Rothenberg.
 
 =head1 LICENSE
 
-Copyright © 2005-2008 Claus Färber.
+Copyright © 2005-2009 Claus Färber.
 
 Copyright © 2001-2004 Robert Rothenberg.
 

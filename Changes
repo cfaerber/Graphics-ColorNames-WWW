@@ -1,16 +1,17 @@
 Revision history for Perl extension Graphics::ColorNames::WWW
 
-1.10  Sat Sep 20 00:00:00 2008
+1.10  Fri Dec 11 00:00:00 2009
 	- added Graphics::ColorNames::CSS
 
 	- re-organisation and cleanup
 	- updated Makefile.PL
 	- added LICENSE, SIGNATURE
+	- use Test::More and Test::NoWarnings
+
+	- move to Github
 
 1.00  Fri Sep 12 00:00:00 2008
 	- cleanup 
 
 0.01  Sat Nov 26 00:00:00 2005
 	- first public release
-
-$Id$	

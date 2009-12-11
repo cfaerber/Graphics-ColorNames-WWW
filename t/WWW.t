@@ -1,8 +1,5 @@
-use Test;
-
-BEGIN {
-  plan tests => 5, todo => [ ] 
-}
+use Test::More tests => 6;
+use Test::NoWarnings;
 
 use strict;
 use Carp;

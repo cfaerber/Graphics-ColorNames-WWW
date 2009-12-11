@@ -1,10 +1,5 @@
-use Test;
-
-
-BEGIN {
-  my $colors = 193-53;
-  plan tests => $colors, todo => [ ] 
-}
+use Test::More tests => 193 - 53 + 1;
+use Test::NoWarnings;
 
 use strict;
 use Carp;
@@ -17,5 +12,5 @@ my $count = 0;
 foreach my $name (keys %colors)
   {
     my @RGB = hex2tuple( $colors{$name} );
-    ok(tuple2hex(@RGB), $col_www{$name} );
+    is(tuple2hex(@RGB), $col_www{$name} );
   }
