@@ -1,5 +1,9 @@
 Revision history for Perl extension Graphics::ColorNames::WWW
 
+1.11  Tue Dec 14 00:00:00 2009
+	- switch to Module::Build
+	- fixes FAILures during make test
+
 1.10  Fri Dec 11 00:00:00 2009
 	- added Graphics::ColorNames::CSS
 
