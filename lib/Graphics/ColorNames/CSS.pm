@@ -7,13 +7,11 @@ use warnings;
 
 use Graphics::ColorNames::WWW();
 
-our $VERSION = '1.10';
+our $VERSION = '1.12';
 
 *NamesRgbTable = \&Graphics::ColorNames::WWW::NamesRgbTable;
 
 1;
-
-=encoding utf8
 
 =head1 NAME
 
@@ -36,11 +34,11 @@ change in the future should the specs happen to diverge.
 
 =head1 AUTHOR
 
-Claus Färber <CFAERBER@cpan.org>
+Claus FE<auml>rber <CFAERBER@cpan.org>
 
 =head1 LICENSE
 
-Copyright © 2005-2009 Claus Färber.  All rights reserved.  
+Copyright 2005-2009 Claus FE<auml>rber.
 
 This program is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

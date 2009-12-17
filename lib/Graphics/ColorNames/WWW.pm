@@ -5,7 +5,7 @@ require 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.11';
+our $VERSION = '1.12';
 
 sub NamesRgbTable() {
   sub rgb { ($_[0] << 16) + ($_[1] << 8) + ($_[2]) }
@@ -164,8 +164,6 @@ sub NamesRgbTable() {
 
 1;
 
-=encoding utf8
-
 =head1 NAME
 
 Graphics::ColorNames::WWW - WWW color names and equivalent RGB values
@@ -197,15 +195,15 @@ CSS Color Module Level 3 <http://www.w3.org/TR/css3-color>.
 
 =head1 AUTHOR
 
-Claus Färber <CFAERBER@cpan.org>
+Claus FE<auml>rber <CFAERBER@cpan.org>
 
 Based on C<Graphics::ColorNames::HTML> by Robert Rothenberg.
 
 =head1 LICENSE
 
-Copyright © 2005-2009 Claus Färber.
+Copyright 2005-2009 Claus FE<auml>rber.
 
-Copyright © 2001-2004 Robert Rothenberg.
+Copyright 2001-2004 Robert Rothenberg.
 
 All rights reserved.  This program is free software; you can
 redistribute it and/or modify it under the same terms as Perl

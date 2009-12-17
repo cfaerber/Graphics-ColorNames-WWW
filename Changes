@@ -1,5 +1,10 @@
 Revision history for Perl extension Graphics::ColorNames::WWW
 
+1.12  Thu Dec 17 00:00:00 2009
+	- only use ASCII in POD, fixes FAILs with perl 5.6.x
+	- add examples in eg/
+	- FIX: #52870 Depending on itself (reported by ANDK)
+
 1.11  Tue Dec 14 00:00:00 2009
 	- switch to Module::Build
 	- fixes FAILures during make test

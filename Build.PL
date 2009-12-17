@@ -15,8 +15,6 @@ my $b = Module::Build->new(
 
     	'requires'	=> {
 		'Graphics::ColorNames'	=> 0.32,
-		'Graphics::ColorNames::WWW' => 0.01,
-		'Params::Validate'	=> 0.75,
 	},
 	'build_requires' => {
 		'Test::More' => 0, 
