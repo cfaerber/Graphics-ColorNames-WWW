@@ -5,7 +5,7 @@ require 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.12';
+our $VERSION = '1.13';
 
 sub NamesRgbTable() {
   use integer;
@@ -60,7 +60,7 @@ sub NamesRgbTable() {
     (lc 'GhostWhite')		=> 0xF8F8FF,	# 248,248,255	
     (lc 'Gold')			=> 0xFFD700,	# 255,215,0	
     (lc 'Goldenrod')		=> 0xDAA520,	# 218,165,32	
-    (lc 'Gray')			=> 0x808080,	# 128,128,128	
+    (lc 'Gray')			=> 0x808080,	# 128,128,128	## NB: Grey is missing!
     (lc 'Green')		=> 0x008000,	# 0,128,0	
     (lc 'GreenYellow')		=> 0xADFF2F,	# 173,255,47	
     (lc 'Honeydew')		=> 0xF0FFF0,	# 240,255,240	
@@ -171,6 +171,11 @@ Graphics::ColorNames::IE - MS Internet Explorer color names and equivalent RGB v
 This module defines color names and their associated RGB values recognized by
 Microsoft Internet Explorer.
 
+This currently is a subset of the colors defined by CSS and SVG specifications.
+
+See the documentation of L<Graphics::ColorNames> for information how to use
+this module.
+
 =head2 NOTE
 
 Although Microsoft calls them "X11 color names", some of them are not identical
@@ -178,7 +183,7 @@ to the definitions in the X Specification.
 
 =head1 SEE ALSO
 
-C<Graphics::ColorNames>, MSDN <http://msdn.microsoft.com/library/en-us/dnwebgen/html/X11_names.asp>
+C<Graphics::ColorNames::WWW>, MSDN <http://msdn.microsoft.com/library/en-us/dnwebgen/html/X11_names.asp>
 
 =head1 AUTHOR
 

@@ -4,10 +4,11 @@ use Test::More;
 eval "use Test::Pod::Coverage;";
 plan skip_all => "Test::Pod::Coverage required for testing POD coverage" if $@;
 
-plan tests => 2;
+plan tests => 4;
 
-pod_coverage_ok( 'Color::Calc', {
-    trustme => [ qr/_(tuple|html|pdf|hex|obj|object)$/, qr/^color(_.+)?$/ ],
-  }, 'Color::Calc is covered by POD' );
+my $trm = { 'trustme' => [ 'NamesRgbTable' ] }; # for use by base module
 
-pod_coverage_ok( 'Color::Calc::WWW', 'Color::Calc::WWW is covered by POD' );  
+pod_coverage_ok( 'Graphics::ColorNames::WWW', $trm );
+pod_coverage_ok( 'Graphics::ColorNames::SVG', $trm );
+pod_coverage_ok( 'Graphics::ColorNames::IE', $trm );
+pod_coverage_ok( 'Graphics::ColorNames::CSS', $trm );

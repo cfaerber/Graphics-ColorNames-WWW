@@ -7,7 +7,7 @@ use warnings;
 
 use Graphics::ColorNames::WWW();
 
-our $VERSION = '1.12';
+our $VERSION = '1.13';
 
 *NamesRgbTable = \&Graphics::ColorNames::WWW::NamesRgbTable;
 
@@ -29,8 +29,17 @@ Graphics::ColorNames::SVG - SVG color names and equivalent RGB values
 This module defines color names and their associated RGB values
 from the SVG 1.2 Specification.
 
-It is actually an alias for L<Graphic::ColorNames::WWW>. This may
-change should the specs happen to diverge.
+It is currently an alias for L<Graphic::ColorNames::WWW>. This may change in
+the future.  It is recommended to use the WWW module, which will always
+implement a superset of this module.
+
+See the documentation of L<Graphics::ColorNames> for information how to use
+this module.
+
+=head1 SEE ALSO
+
+L<Graphics::ColorNames::WWW>, 
+Scalable Vector Graphics (SVG) 1.1 Specification, Section 4.2 (L<http://www.w3.org/TR/SVG/types.html#ColorKeywords>)
 
 =head1 AUTHOR
 
